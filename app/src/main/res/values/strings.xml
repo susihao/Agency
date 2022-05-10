@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">苏苏待办</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="agency_future_text">待办</string>
+    <string name="agency_history_text">历史</string>
+    <string name="agency_data_text">数据</string>
+
+    <string name="study">学习</string>
+    <string name="travel">游玩</string>
+    <string name="work">工作</string>
+
+    <string name="item_agency_name">计划名</string>
+    <string name="item_agency_type">类型</string>
+    <string name="item_agency_nowstate">是否完成</string>
+    <string name="item_agency_nowTime">添加时间</string>
+    <string name="item_agency_futureTime">预计时间</string>
+
+    <string name="fra_add_data">添加待办</string>
+    <string name="fra_data_OKNumbers">已完成待办数：</string>
+    <string name="fra_data_NevNumbers">待完成待办数：</string>
+    <string name="title_activity_add_agency">AddAgency</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_agency_type">待办类型:</string>
+    <string name="add_agency_name">待办名:</string>
+    <string name="add_agency_futureTime">预计时间:</string>
+</resources>

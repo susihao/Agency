@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/userName_tv"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="188dp"
+        android:text="用户名："
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName_Et"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/userName_tv"
+        app:layout_constraintTop_toTopOf="@+id/userName_tv" />
+
+    <TextView
+        android:id="@+id/userPassword_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minWidth="100dp"
+        android:text="密码："
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/userName_tv"
+        app:layout_constraintTop_toBottomOf="@+id/userName_tv" />
+
+    <EditText
+        android:id="@+id/userPassword_Et"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/userPassword_tv"
+        app:layout_constraintTop_toTopOf="@+id/userPassword_tv" />
+
+    <TextView
+        android:id="@+id/userPassword_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:minWidth="80dp"
+        android:text="确认密码："
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/userName_tv"
+        app:layout_constraintTop_toBottomOf="@+id/userName_tv" />
+
+    <EditText
+        android:id="@+id/userPassword_Et_one"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/userPassword_tv_one"
+        app:layout_constraintTop_toTopOf="@+id/userPassword_tv_one" />
+
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="201dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/item_futureTime_color"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:text="确认注册"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/userPassword_tv"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword_tv" />
+
+    <TextView
+        android:id="@+id/cancle_btn"
+        android:layout_width="201dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/item_type_color"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:text="取消注册"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/userPassword_tv"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

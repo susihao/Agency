@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update"
+    tools:context=".Update_agency">
+
+    <TextView
+        android:id="@+id/update_agency_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:labelFor="@+id/add_agency_name"
+        android:text="@string/add_agency_name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/update_agency_name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/update_agency_name_text"
+        app:layout_constraintStart_toEndOf="@+id/update_agency_name_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/delete_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/item_delete_color"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/update_RG_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="92dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/add_agency_type"
+            android:text="@string/add_agency_type"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <RadioButton
+            android:id="@+id/RB_study_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingRight="10dp"
+            android:checked="true"
+            android:text="学习"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/RB_travel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingRight="10dp"
+            android:text="游玩"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/RB_work_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingRight="10dp"
+            android:text="工作"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RG_state_group"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_RG_type">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否完成:"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/RB_OK_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:paddingRight="10dp"
+            android:text="完成" />
+
+        <RadioButton
+            android:id="@+id/RB_Nev_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="未完成" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/update_agency_futureTime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:hint="2022-05-04"
+        android:labelFor="@+id/add_nowTime_type"
+        android:text="@string/add_agency_futureTime"
+        android:textColor="@color/white"
+        android:textSize="@dimen/item_size_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG_state_group" />
+
+    <EditText
+        android:id="@+id/update_futureTime_type"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:hint="2022-05-04"
+        android:textSize="@dimen/item_size_tv"
+        app:layout_constraintStart_toEndOf="@+id/update_agency_futureTime_text"
+        app:layout_constraintTop_toBottomOf="@+id/RG_state_group" />
+
+    <TextView
+        android:id="@+id/update_agency_okTime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/okStr"
+        android:textColor="@color/white"
+        android:textSize="@dimen/item_size_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG_state_group" />
+
+    <EditText
+        android:id="@+id/update_okTime_type"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/item_size_tv"
+        android:hint="未完成不用填哦！"
+        app:layout_constraintStart_toEndOf="@+id/update_agency_okTime_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_futureTime_type" />
+
+    <EditText
+        android:id="@+id/update_agency_context"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/add_context_et"
+        android:inputType="text"
+        android:textSize="@dimen/item_size_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG_state_group" />
+
+    <TextView
+        android:id="@+id/UpdateCancle_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/cancle_btn_bg"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_futureTime_type" />
+
+    <TextView
+        android:id="@+id/UpdateDetermine_btn"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/determine_btn_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/UpdateCancle_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

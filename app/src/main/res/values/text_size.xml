@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_size_tv">15dp</dimen>
+    <dimen name="user_name_size">20dp</dimen>
+</resources>
